@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The "Where" - US Housing Price Explorer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./Bootswatch_ Sandstone_files/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="./Bootswatch_ Sandstone_files/bootstrap.min.css"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></script>
+  <script>
+    function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  </script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand">US Housing Price Explorer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="the_why.html">The "Why"</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">The "Where"
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="the_when.html">The "When"</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+<div class="container">
+  <div class="bs-docs-section clearfix", style="margin-top: 4em;">
+    <div class="row">
+      <div class="col-lg-12 text-left"> 
+        <br>
+        <div class="page-header">
+          <h2>Where should I buy?</h2>
+        </div>
+        <hr>
+        <p>
+          Deciding to buy a home brings forth many questions; location is usually the first one. 
+          Different regions offer varying opportunities, depending on your goals and priorities.<br>
+          <strong>If investment is your primary incentive,</strong> take a look at the map below that showcases the top 200 fastest-growing regions in the U.S.
+          <h5 style="color: #007bff;">Hover over the dots to see details</h5> 
+        </p>
+          <iframe src="Plots/NL_map_only.html" height="500" width="1000" style="border:none; margin-left: 30px;" name="NL_map_only"></iframe>
+        </p>
+          However, many of us are buying to a home to live and build a family. In that case, <strong>cost might be a primary concern.</strong> Below is a plot that shows an overall price comparison across the U.S., providing insight into affordability and value in different areas.
+        </p>
+        <p>
+          <h5 style="color: #007bff;">Click to select a state, and filter by year on the right. Use the "Home" button to reset the plot to its original state.</h5> 
+        </p>
+
+        <div class='tableauPlaceholder' id='viz1690092257813' style='position: relative'><noscript><a href='#'><img alt='Geographic Distribution of Sale Prices ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8X&#47;8XSNSFFTC&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;8XSNSFFTC' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8X&#47;8XSNSFFTC&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1690092257813');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+        <hr>
+        
+        </p>
+
+        <hr>
+        <p>
+          In certain regions, the real estate market can be quite competitive. As a prospective buyer, it's essential to understand that your desired home might command a price higher than its initial listing. 
+          This practice can vary by state, and it's critical to strategize your offers accordingly. 
+          The chart below illustrates the percentage of buyers who end up paying above the listed price in different states.
+        </p>
+
+        <div class='tableauPlaceholder' id='viz1690938809065' style='position: relative'><noscript><a href='#'><img alt='Map of Percentage of Homes Sold Above Listing ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CN&#47;CN6YYMYR9&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;project_listing_prices_dropdown&#47;MapofPercentageofHomesSoldAboveListing?:language=en-US&amp;:embed=true' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CN&#47;CN6YYMYR9&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1690938809065');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <hr>
+        <h4>
+          Next Steps
+        </h4>
+
+        <p>
+          Now you have an overall understanding of prices in different areas, the next step is to understand when to enter the market.
+
+          <!-- The next steps then would be to dig deeper into the particular area that you are interested in, start searching for basic guides on
+          the general purchasing process. 
+          To view the current listings, 
+          <a href="https://redfin.com">Redfin</a>,
+          <a href="https://zillow.com">Zillow</a>, and
+          <a href="https://realtor.com">Realtor.com</a> are all reliable resources. 
+        </p> -->
+
+      </div>
+  
+    </div>
+  </div>    
+  
+</div>
+
+<footer class="container-fluid text-center">
+  <hr>
+  <button type="button" class="btn btn-primary" onclick="location.href='the_why.html'" id="prev_page" title="Click to go to the previous page" ><< Prev: The "Why"</button>
+  <button type="button" class="btn btn-primary" onclick="topFunction()" id="myBtn" title="Go to top" >Back to the Top</button>
+  <button type="button" class="btn btn-primary" onclick="location.href='the_when.html'" id="next_page" title="Click to go to the next page" >Next: The "When" >></button>
+  <hr>
+</footer>
+
+</body>
+</html>

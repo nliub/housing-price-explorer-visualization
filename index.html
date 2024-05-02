@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home - US Housing Price Explorer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./Bootswatch_ Sandstone_files/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="./Bootswatch_ Sandstone_files/bootstrap.min.css"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></script>
+
+  <script>
+    function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  </script>
+
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand">US Housing Price Explorer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="the_why.html">The "Why"</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="the_where.html">The "Where"</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="the_when.html">The "When"
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+<div class="container">
+  <div class="bs-docs-section clearfix", style="margin-top: 4em;">
+    <div class="row">
+      <div class="col-lg-12 text-left"> 
+        <br>
+        <div class="page-header">
+          <h1>Welcome</h1>
+          <p>
+            Welcome to the US Housing Price Explorer!<br>
+            Have you ever wondered whether you should buy or sell a house but not knowing where to start?<br>
+            Have you thought about investing in real estate but don't know when would be a good timing?<br>
+            If your answer is yes, then you've come to the right place!<br>
+            This website aims to provide insightful visualizations for potential home buyers as well as homeowners, investors, 
+            and real estate agents.<br>
+            We hope this website can guide you on your next steps into the US housing market.
+          
+          </p>
+          <iframe src="Plots/NL_national_average.html" height="450" width="900" style="border:none; margin-left: 30px;" name="NL_national_average" title="NL_national_average"></iframe>
+
+          <div>
+            <h4>Quick Navigation:</h4>
+            <div class="row">
+              <!-- Step 1: Why -->
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <i class="fas fa-question-circle fa-3x"></i> <!-- Icon for Why -->
+                    <h5 class="card-title">Step 1: Why</h5>
+                    <p class="card-text">Discover the reasoning behind investing in the housing market.</p>
+                    <a href="the_why.html" class="btn btn-primary">Why should you become a house owner?</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Step 2: Where -->
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <i class="fas fa-map-marker-alt fa-3x"></i> <!-- Icon for Where -->
+                    <h5 class="card-title">Step 2: Where</h5>
+                    <p class="card-text">Explore the regional housing market behavior.</p>
+                    <a href="the_where.html" class="btn btn-primary">Where should you buy or sell a house?</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Step 3: When -->
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <i class="fas fa-clock fa-3x"></i> <!-- Icon for When -->
+                    <h5 class="card-title">Step 3: When</h5>
+                    <p class="card-text">Learn about the seasonality of the housing market.</p>
+                    <a href="the_when.html" class="btn btn-primary">When should you buy or sell a house?</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div>
+              <h4>A word about our dataset:</h4>
+              <p>
+                Data from this website are sourced from the <a href="https://www.redfin.com/news/data-center/">Redfin Data Center.</a><br>
+                The time range of our data is: <strong> 2017 - June 2023</strong><br>
+                The data were computed on a rolling 4-week window, grouped by metropolitan area and by county. 
+              </p>
+
+
+          </div>
+
+        </div>
+        
+        <br>
+
+      </div>
+  
+    </div>
+  </div>    
+  
+</div>
+<footer class="container-fluid text-center">
+  <hr>
+  <button type="button" class="btn btn-primary" onclick="topFunction()" id="myBtn" title="Go to top" >Back to the Top</button>
+  <button type="button" class="btn btn-primary" onclick="location.href='the_why.html'" id="next_page" title="Click to go to the next page" >Next: The "Why" >></button>
+  <hr>
+</footer>
+
+
+
+</body>
+</html>

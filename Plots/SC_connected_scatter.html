@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.12.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.1"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+  "data": {"name": "data-82fc04bc21f21a930bb60daeb0f9499b"},
+  "mark": {"type": "line", "opacity": 0.5, "point": true},
+  "encoding": {
+    "order": {"field": "period_end_month", "type": "temporal"},
+    "tooltip": {"field": "period_end_month", "type": "temporal"},
+    "x": {
+      "field": "MORTGAGE30US",
+      "title": "US 30-yr Fixed Mortgage Rate (%)",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "median_sale_ppsf_yoy",
+      "title": "Median Sale Price per Square Foot Change YoY",
+      "type": "quantitative"
+    }
+  },
+  "selection": {
+    "selector005": {
+      "type": "interval",
+      "bind": "scales",
+      "encodings": ["x", "y"]
+    }
+  },
+  "title": "How Does National Home Sale Price Fluctuates with Mortgage Interest Rates",
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-82fc04bc21f21a930bb60daeb0f9499b": [
+      {
+        "period_end_month": "2021-01-01T00:00:00",
+        "total_homes_sold": 4563793,
+        "median_sale_ppsf": 111.72863462561308,
+        "median_sale_ppsf_yoy": 0.1388474110950677,
+        "MONTH": "2021-01-01T00:00:00",
+        "MORTGAGE30US": 2.75
+      },
+      {
+        "period_end_month": "2021-02-01T00:00:00",
+        "total_homes_sold": 3362487,
+        "median_sale_ppsf": 112.62332316778728,
+        "median_sale_ppsf_yoy": 0.1491594843754044,
+        "MONTH": "2021-02-01T00:00:00",
+        "MORTGAGE30US": 2.77
+      },
+      {
+        "period_end_month": "2021-03-01T00:00:00",
+        "total_homes_sold": 3940197,
+        "median_sale_ppsf": 114.30104810655172,
+        "median_sale_ppsf_yoy": 0.15276152375342217,
+        "MONTH": "2021-03-01T00:00:00",
+        "MORTGAGE30US": 3.07
+      },
+      {
+        "period_end_month": "2021-04-01T00:00:00",
+        "total_homes_sold": 4240238,
+        "median_sale_ppsf": 115.53588091386551,
+        "median_sale_ppsf_yoy": 0.1464048664911938,
+        "MONTH": "2021-04-01T00:00:00",
+        "MORTGAGE30US": 3.04
+      },
+      {
+        "period_end_month": "2021-05-01T00:00:00",
+        "total_homes_sold": 5979204,
+        "median_sale_ppsf": 119.58562901007092,
+        "median_sale_ppsf_yoy": 0.17531198845025214,
+        "MONTH": "2021-05-01T00:00:00",
+        "MORTGAGE30US": 2.955
+      },
+      {
+        "period_end_month": "2021-06-01T00:00:00",
+        "total_homes_sold": 4936285,
+        "median_sale_ppsf": 122.2245782832986,
+        "median_sale_ppsf_yoy": 0.19360108600046677,
+        "MONTH": "2021-06-01T00:00:00",
+        "MORTGAGE30US": 2.975
+      },
+      {
+        "period_end_month": "2021-07-01T00:00:00",
+        "total_homes_sold": 5150567,
+        "median_sale_ppsf": 124.80994168929688,
+        "median_sale_ppsf_yoy": 0.1848003130846132,
+        "MONTH": "2021-07-01T00:00:00",
+        "MORTGAGE30US": 2.88
+      },
+      {
+        "period_end_month": "2021-08-01T00:00:00",
+        "total_homes_sold": 6124941,
+        "median_sale_ppsf": 126.5656453325178,
+        "median_sale_ppsf_yoy": 0.1789530505913137,
+        "MONTH": "2021-08-01T00:00:00",
+        "MORTGAGE30US": 2.865
+      },
+      {
+        "period_end_month": "2021-09-01T00:00:00",
+        "total_homes_sold": 4806223,
+        "median_sale_ppsf": 127.73551916589614,
+        "median_sale_ppsf_yoy": 0.1716303763355363,
+        "MONTH": "2021-09-01T00:00:00",
+        "MORTGAGE30US": 2.88
+      },
+      {
+        "period_end_month": "2021-10-01T00:00:00",
+        "total_homes_sold": 5898278,
+        "median_sale_ppsf": 128.41459342680395,
+        "median_sale_ppsf_yoy": 0.1665990162031281,
+        "MONTH": "2021-10-01T00:00:00",
+        "MORTGAGE30US": 3.07
+      },
+      {
+        "period_end_month": "2021-11-01T00:00:00",
+        "total_homes_sold": 4459181,
+        "median_sale_ppsf": 128.2503604137837,
+        "median_sale_ppsf_yoy": 0.15940635922281293,
+        "MONTH": "2021-11-01T00:00:00",
+        "MORTGAGE30US": 3.0949999999999998
+      },
+      {
+        "period_end_month": "2021-12-01T00:00:00",
+        "total_homes_sold": 4430239,
+        "median_sale_ppsf": 128.76594764712416,
+        "median_sale_ppsf_yoy": 0.1674192483050336,
+        "MONTH": "2021-12-01T00:00:00",
+        "MORTGAGE30US": 3.11
+      },
+      {
+        "period_end_month": "2022-01-01T00:00:00",
+        "total_homes_sold": 4480710,
+        "median_sale_ppsf": 128.27822835927543,
+        "median_sale_ppsf_yoy": 0.171714070342599,
+        "MONTH": "2022-01-01T00:00:00",
+        "MORTGAGE30US": 3.5
+      },
+      {
+        "period_end_month": "2022-02-01T00:00:00",
+        "total_homes_sold": 3229887,
+        "median_sale_ppsf": 129.12102364986316,
+        "median_sale_ppsf_yoy": 0.165541034971397,
+        "MONTH": "2022-02-01T00:00:00",
+        "MORTGAGE30US": 3.79
+      },
+      {
+        "period_end_month": "2022-03-01T00:00:00",
+        "total_homes_sold": 3800361,
+        "median_sale_ppsf": 132.80241459683361,
+        "median_sale_ppsf_yoy": 0.17452395342729748,
+        "MONTH": "2022-03-01T00:00:00",
+        "MORTGAGE30US": 4.16
+      },
+      {
+        "period_end_month": "2022-04-01T00:00:00",
+        "total_homes_sold": 4102620,
+        "median_sale_ppsf": 135.9303365899878,
+        "median_sale_ppsf_yoy": 0.17691954707239485,
+        "MONTH": "2022-04-01T00:00:00",
+        "MORTGAGE30US": 5.05
+      },
+      {
+        "period_end_month": "2022-05-01T00:00:00",
+        "total_homes_sold": 5482223,
+        "median_sale_ppsf": 138.48338384119498,
+        "median_sale_ppsf_yoy": 0.17320904544537336,
+        "MONTH": "2022-05-01T00:00:00",
+        "MORTGAGE30US": 5.26
+      },
+      {
+        "period_end_month": "2022-06-01T00:00:00",
+        "total_homes_sold": 4458220,
+        "median_sale_ppsf": 141.75799128193944,
+        "median_sale_ppsf_yoy": 0.15620567864584856,
+        "MONTH": "2022-06-01T00:00:00",
+        "MORTGAGE30US": 5.7
+      },
+      {
+        "period_end_month": "2022-07-01T00:00:00",
+        "total_homes_sold": 5425549,
+        "median_sale_ppsf": 142.64292550819994,
+        "median_sale_ppsf_yoy": 0.14059816654722573,
+        "MONTH": "2022-07-01T00:00:00",
+        "MORTGAGE30US": 5.404999999999999
+      },
+      {
+        "period_end_month": "2022-08-01T00:00:00",
+        "total_homes_sold": 3996663,
+        "median_sale_ppsf": 141.87039097675128,
+        "median_sale_ppsf_yoy": 0.1228558590643509,
+        "MONTH": "2022-08-01T00:00:00",
+        "MORTGAGE30US": 5.175
+      },
+      {
+        "period_end_month": "2022-09-01T00:00:00",
+        "total_homes_sold": 3945479,
+        "median_sale_ppsf": 140.95740700001969,
+        "median_sale_ppsf_yoy": 0.10753587351277236,
+        "MONTH": "2022-09-01T00:00:00",
+        "MORTGAGE30US": 6.02
+      },
+      {
+        "period_end_month": "2022-10-01T00:00:00",
+        "total_homes_sold": 4519922,
+        "median_sale_ppsf": 140.49584162462605,
+        "median_sale_ppsf_yoy": 0.09729584075921165,
+        "MONTH": "2022-10-01T00:00:00",
+        "MORTGAGE30US": 6.93
+      },
+      {
+        "period_end_month": "2022-11-01T00:00:00",
+        "total_homes_sold": 3116290,
+        "median_sale_ppsf": 139.8095333480543,
+        "median_sale_ppsf_yoy": 0.0829285506588153,
+        "MONTH": "2022-11-01T00:00:00",
+        "MORTGAGE30US": 6.78
+      },
+      {
+        "period_end_month": "2022-12-01T00:00:00",
+        "total_homes_sold": 2934359,
+        "median_sale_ppsf": 137.50837454616067,
+        "median_sale_ppsf_yoy": 0.0660570288006019,
+        "MONTH": "2022-12-01T00:00:00",
+        "MORTGAGE30US": 6.33
+      },
+      {
+        "period_end_month": "2023-01-01T00:00:00",
+        "total_homes_sold": 2937345,
+        "median_sale_ppsf": 136.97405167104938,
+        "median_sale_ppsf_yoy": 0.0488274935613275,
+        "MONTH": "2023-01-01T00:00:00",
+        "MORTGAGE30US": 6.24
+      },
+      {
+        "period_end_month": "2023-02-01T00:00:00",
+        "total_homes_sold": 2317305,
+        "median_sale_ppsf": 136.52327798095735,
+        "median_sale_ppsf_yoy": 0.03976674776144755,
+        "MONTH": "2023-02-01T00:00:00",
+        "MORTGAGE30US": 6.220000000000001
+      },
+      {
+        "period_end_month": "2023-03-01T00:00:00",
+        "total_homes_sold": 2993820,
+        "median_sale_ppsf": 138.94602212573062,
+        "median_sale_ppsf_yoy": 0.0360597256599879,
+        "MONTH": "2023-03-01T00:00:00",
+        "MORTGAGE30US": 6.6
+      },
+      {
+        "period_end_month": "2023-04-01T00:00:00",
+        "total_homes_sold": 4014745,
+        "median_sale_ppsf": 141.49800226352986,
+        "median_sale_ppsf_yoy": 0.0286477927157087,
+        "MONTH": "2023-04-01T00:00:00",
+        "MORTGAGE30US": 6.335
+      },
+      {
+        "period_end_month": "2023-05-01T00:00:00",
+        "total_homes_sold": 3468008,
+        "median_sale_ppsf": 144.2303623876253,
+        "median_sale_ppsf_yoy": 0.0226647234936327,
+        "MONTH": "2023-05-01T00:00:00",
+        "MORTGAGE30US": 6.39
+      },
+      {
+        "period_end_month": "2023-06-01T00:00:00",
+        "total_homes_sold": 3607987,
+        "median_sale_ppsf": 148.1720411537434,
+        "median_sale_ppsf_yoy": 0.0267257389376784,
+        "MONTH": "2023-06-01T00:00:00",
+        "MORTGAGE30US": 6.7
+      }
+    ]
+  }
+};
+    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>

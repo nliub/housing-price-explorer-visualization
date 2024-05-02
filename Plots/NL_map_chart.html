@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, 
+        "hconcat": [{"data": {"name": "data-e6a28f97fd9419767399127ae93a857c"}, 
+        "mark": "bar", "encoding": {"color": {"condition": {"value": "lightsteelblue", "selection": "selector012"}, "value": "lightgray"}, 
+        "x": {"field": "region_name", "title": "Region Name", "type": "nominal"}, "y": {"axis": {"grid": false}, 
+        "field": "annual_sale_growth", "title": "Annualized Growth", "type": "quantitative"}}, "height": 400, "width": 250}, {"layer": [{"data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/us-10m.json", "format": {"feature": "states", "type": "topojson"}}, "mark": {"type": "geoshape", "fill": "lightsteelblue", "stroke": "white"}, "projection": {"type": "albersUsa"}}, {"data": {"name": "data-e6a28f97fd9419767399127ae93a857c"}, "mark": {"type": "circle", "size": 300}, "encoding": {"color": {"field": "annual_sale_growth", "legend": {"title": "Annualized Growth (%)"}, "scale": {"scheme": "goldred"}, "type": "quantitative"}, "latitude": {"field": "latitude", "type": "quantitative"}, "longitude": {"field": "longitude", "type": "quantitative"}, "tooltip": [{"field": "region_name", "title": "Region", "type": "nominal"}, {"field": "annual_sale_growth", "title": "Annual Sale Growth (%)", "type": "quantitative"}]}, 
+        "height": 400, "selection": {"selector012": {"type": "single"}}, "title": {"text": "Fatest Growing Regions of Median Home Sale Price, Jan 2017 - June 2023", "fontSize": 20, "anchor": "middle"}, "width": 700}]}], 
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-e6a28f97fd9419767399127ae93a857c": [{"region_name": "Petersburg, VA", "monthly_sale_growth": 0.0198317257540294, "monthly_ppsf_growth": 0.0172355727594599, "annual_sale_growth": 26.6, "annual_ppsf_growth": 0.2276044914718449, "latitude": 37.2279279, "longitude": -77.40192669999999}, {"region_name": "Polk County, NC", "monthly_sale_growth": 0.0164981009342921, "monthly_ppsf_growth": 0.0080487475009189, "annual_sale_growth": 21.7, "annual_ppsf_growth": 0.100977420273322, "latitude": 35.2686842, "longitude": -82.1713632}, {"region_name": "Houghton, MI metro area", "monthly_sale_growth": 0.0140907726359209, "monthly_ppsf_growth": 0.0093299182825599, "annual_sale_growth": 18.3, "annual_ppsf_growth": 0.1178866253699493, "latitude": 47.12113309999999, "longitude": -88.5694182}, {"region_name": "Fayette County, OH", "monthly_sale_growth": 0.0152600474466129, "monthly_ppsf_growth": 0.0127109572221586, "annual_sale_growth": 19.9, "annual_ppsf_growth": 0.1636600033474906, "latitude": 39.5919809, "longitude": -83.46435509999999}, {"region_name": "Tipton County, TN", "monthly_sale_growth": 0.0151733184025797, "monthly_ppsf_growth": 0.0101564392304993, "annual_sale_growth": 19.8, "annual_ppsf_growth": 0.12892122684774, "latitude": 35.5217179, "longitude": -89.7379958}, {"region_name": "Stephenville, TX metro area", "monthly_sale_growth": 0.0149084853911198, "monthly_ppsf_growth": 0.0148826624970168, "annual_sale_growth": 19.4, "annual_ppsf_growth": 0.1939606145881753, "latitude": 32.2206958, "longitude": -98.2022633}, {"region_name": "DeKalb County, AL", "monthly_sale_growth": 0.0143402590424654, "monthly_ppsf_growth": 0.0106582686551759, "annual_sale_growth": 18.6, "annual_ppsf_growth": 0.1356696039379501, "latitude": 34.5211397, "longitude": -85.684578}, {"region_name": "Brown County, OH", "monthly_sale_growth": 0.0142793433141801, "monthly_ppsf_growth": 0.0131452640739559, "annual_sale_growth": 18.5, "annual_ppsf_growth": 0.1696626551883926, "latitude": 38.9300335, "longitude": -83.8699226}, {"region_name": "Danville, KY metro area", "monthly_sale_growth": 0.0139666303884764, "monthly_ppsf_growth": 0.0123830296233513, "annual_sale_growth": 18.1, "annual_ppsf_growth": 0.1591463677218871, "latitude": 37.6456329, "longitude": -84.77217019999999}, {"region_name": "Monroe County, PA", "monthly_sale_growth": 0.0139580598314026, "monthly_ppsf_growth": 0.014596758756479, "annual_sale_growth": 18.1, "annual_ppsf_growth": 0.1899306385789845, "latitude": 41.0458376, "longitude": -75.2479061}, {"region_name": "Rowan County, NC", "monthly_sale_growth": 0.0137037429163404, "monthly_ppsf_growth": 0.0120170811557343, "annual_sale_growth": 17.7, "annual_ppsf_growth": 0.1541283595611471, "latitude": 35.6303455, "longitude": -80.54384499999999}, {"region_name": "Madison County, OH", "monthly_sale_growth": 0.0136839522085538, "monthly_ppsf_growth": 0.0107333526695214, "annual_sale_growth": 17.7, "annual_ppsf_growth": 0.1366824742972769, "latitude": 39.9154985, "longitude": -83.3789389}, {"region_name": "Cumberland County, NJ", "monthly_sale_growth": 0.0134552144975135, "monthly_ppsf_growth": 0.0113347118688174, "annual_sale_growth": 17.4, "annual_ppsf_growth": 0.1448246304921112, "latitude": 39.2587106, "longitude": -75.06111469999999}, {"region_name": "Vineland, NJ metro area", "monthly_sale_growth": 0.0134552144975135, "monthly_ppsf_growth": 0.0113347118688174, "annual_sale_growth": 17.4, "annual_ppsf_growth": 0.1448246304921112, "latitude": 39.4863773, "longitude": -75.02596369999999}, {"region_name": "Dale County, AL", "monthly_sale_growth": 0.0134111714183238, "monthly_ppsf_growth": 0.0112431872302882, "annual_sale_growth": 17.3, "annual_ppsf_growth": 0.1435819852444027, "latitude": 31.4645298, "longitude": -85.684578}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.12.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.1"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "config": {
+    "view": {"continuousWidth": 400, "continuousHeight": 300},
+    "axis": {"labelFontSize": 12, "titleFontSize": 15},
+    "legend": {"labelFontSize": 12, "titleFontSize": 15}
+  },
+  "data": {"name": "data-c6f8802dec49ba898dbfc8b16773fd32"},
+  "mark": {"type": "line", "point": true},
+  "encoding": {
+    "color": {
+      "field": "Rate_Type",
+      "legend": {"title": "Rate Type"},
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "period_end_month",
+        "format": "%B, %Y",
+        "title": "Month",
+        "type": "temporal"
+      },
+      {
+        "field": "median_sale_ppsf",
+        "format": ".2f",
+        "title": "Median Sale Price Per Sqft (USD)",
+        "type": "quantitative"
+      },
+      {"field": "Rate_Type", "title": "Rate Type", "type": "nominal"},
+      {
+        "field": "Rates(%)",
+        "format": ".2f",
+        "title": "%",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "period_end_month",
+      "title": "Period End Month",
+      "type": "temporal"
+    },
+    "y": {"field": "Rates(%)", "type": "quantitative"}
+  },
+  "selection": {
+    "selector007": {
+      "type": "interval",
+      "bind": "scales",
+      "encodings": ["x", "y"]
+    }
+  },
+  "width": 800,
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-c6f8802dec49ba898dbfc8b16773fd32": [
+      {
+        "period_end_month": "2017-01-01T00:00:00",
+        "median_sale_ppsf": 87.67102222310046,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.5
+      },
+      {
+        "period_end_month": "2017-02-01T00:00:00",
+        "median_sale_ppsf": 85.23130383381105,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.7
+      },
+      {
+        "period_end_month": "2017-03-01T00:00:00",
+        "median_sale_ppsf": 86.58183474862886,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.4
+      },
+      {
+        "period_end_month": "2017-04-01T00:00:00",
+        "median_sale_ppsf": 88.59994626936985,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.2
+      },
+      {
+        "period_end_month": "2017-05-01T00:00:00",
+        "median_sale_ppsf": 90.63560007113713,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.9
+      },
+      {
+        "period_end_month": "2017-06-01T00:00:00",
+        "median_sale_ppsf": 92.2640532424509,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.6
+      },
+      {
+        "period_end_month": "2017-07-01T00:00:00",
+        "median_sale_ppsf": 93.17627032374912,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.7
+      },
+      {
+        "period_end_month": "2017-08-01T00:00:00",
+        "median_sale_ppsf": 93.04015985713805,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.9
+      },
+      {
+        "period_end_month": "2017-09-01T00:00:00",
+        "median_sale_ppsf": 93.90820943063133,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.2
+      },
+      {
+        "period_end_month": "2017-10-01T00:00:00",
+        "median_sale_ppsf": 92.25897038954636,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2
+      },
+      {
+        "period_end_month": "2017-11-01T00:00:00",
+        "median_sale_ppsf": 92.91296680611147,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.2
+      },
+      {
+        "period_end_month": "2017-12-01T00:00:00",
+        "median_sale_ppsf": 92.50094156649459,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.1
+      },
+      {
+        "period_end_month": "2018-01-01T00:00:00",
+        "median_sale_ppsf": 92.393194747717,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.1
+      },
+      {
+        "period_end_month": "2018-02-01T00:00:00",
+        "median_sale_ppsf": 90.51097627046647,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.2
+      },
+      {
+        "period_end_month": "2018-03-01T00:00:00",
+        "median_sale_ppsf": 91.9931856899489,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.4
+      },
+      {
+        "period_end_month": "2018-04-01T00:00:00",
+        "median_sale_ppsf": 94.46575740453139,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.5
+      },
+      {
+        "period_end_month": "2018-05-01T00:00:00",
+        "median_sale_ppsf": 96.13493635425317,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.8
+      },
+      {
+        "period_end_month": "2018-06-01T00:00:00",
+        "median_sale_ppsf": 97.80064909704294,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.9
+      },
+      {
+        "period_end_month": "2018-07-01T00:00:00",
+        "median_sale_ppsf": 99.14999467984813,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.9
+      },
+      {
+        "period_end_month": "2018-08-01T00:00:00",
+        "median_sale_ppsf": 99.30802432110066,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.7
+      },
+      {
+        "period_end_month": "2018-09-01T00:00:00",
+        "median_sale_ppsf": 98.5769836641828,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.3
+      },
+      {
+        "period_end_month": "2018-10-01T00:00:00",
+        "median_sale_ppsf": 98.44464400779725,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.5
+      },
+      {
+        "period_end_month": "2018-11-01T00:00:00",
+        "median_sale_ppsf": 98.03285599568264,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.2
+      },
+      {
+        "period_end_month": "2018-12-01T00:00:00",
+        "median_sale_ppsf": 96.79310861049035,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.9
+      },
+      {
+        "period_end_month": "2019-01-01T00:00:00",
+        "median_sale_ppsf": 96.84008069861659,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.6
+      },
+      {
+        "period_end_month": "2019-02-01T00:00:00",
+        "median_sale_ppsf": 95.95875226690484,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.5
+      },
+      {
+        "period_end_month": "2019-03-01T00:00:00",
+        "median_sale_ppsf": 95.91047151607523,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.9
+      },
+      {
+        "period_end_month": "2019-04-01T00:00:00",
+        "median_sale_ppsf": 98.23199999018834,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2
+      },
+      {
+        "period_end_month": "2019-05-01T00:00:00",
+        "median_sale_ppsf": 100.3479323665951,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.8
+      },
+      {
+        "period_end_month": "2019-06-01T00:00:00",
+        "median_sale_ppsf": 101.45623089364916,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.6
+      },
+      {
+        "period_end_month": "2019-07-01T00:00:00",
+        "median_sale_ppsf": 103.66010948245525,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.8
+      },
+      {
+        "period_end_month": "2019-08-01T00:00:00",
+        "median_sale_ppsf": 103.02675139079005,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.7
+      },
+      {
+        "period_end_month": "2019-09-01T00:00:00",
+        "median_sale_ppsf": 102.37660523673507,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.7
+      },
+      {
+        "period_end_month": "2019-10-01T00:00:00",
+        "median_sale_ppsf": 102.76813357613534,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.8
+      },
+      {
+        "period_end_month": "2019-11-01T00:00:00",
+        "median_sale_ppsf": 101.70719796079557,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.1
+      },
+      {
+        "period_end_month": "2019-12-01T00:00:00",
+        "median_sale_ppsf": 100.34323338120302,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.3
+      },
+      {
+        "period_end_month": "2020-01-01T00:00:00",
+        "median_sale_ppsf": 100.060863272046,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.5
+      },
+      {
+        "period_end_month": "2020-02-01T00:00:00",
+        "median_sale_ppsf": 98.85383280399697,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.3
+      },
+      {
+        "period_end_month": "2020-03-01T00:00:00",
+        "median_sale_ppsf": 99.60101475587233,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.5
+      },
+      {
+        "period_end_month": "2020-04-01T00:00:00",
+        "median_sale_ppsf": 102.92037855143147,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 0.3
+      },
+      {
+        "period_end_month": "2020-05-01T00:00:00",
+        "median_sale_ppsf": 103.35614054704533,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 0.1
+      },
+      {
+        "period_end_month": "2020-06-01T00:00:00",
+        "median_sale_ppsf": 106.19982504158341,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 0.6
+      },
+      {
+        "period_end_month": "2020-07-01T00:00:00",
+        "median_sale_ppsf": 107.92751421496763,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1
+      },
+      {
+        "period_end_month": "2020-08-01T00:00:00",
+        "median_sale_ppsf": 109.00027964328456,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.3
+      },
+      {
+        "period_end_month": "2020-09-01T00:00:00",
+        "median_sale_ppsf": 111.89569859878544,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.4
+      },
+      {
+        "period_end_month": "2020-10-01T00:00:00",
+        "median_sale_ppsf": 110.80719904728754,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.2
+      },
+      {
+        "period_end_month": "2020-11-01T00:00:00",
+        "median_sale_ppsf": 111.30441014810617,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.2
+      },
+      {
+        "period_end_month": "2020-12-01T00:00:00",
+        "median_sale_ppsf": 112.901482436578,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.4
+      },
+      {
+        "period_end_month": "2021-01-01T00:00:00",
+        "median_sale_ppsf": 112.0301568205333,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.4
+      },
+      {
+        "period_end_month": "2021-02-01T00:00:00",
+        "median_sale_ppsf": 112.95132806827048,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 1.7
+      },
+      {
+        "period_end_month": "2021-03-01T00:00:00",
+        "median_sale_ppsf": 115.61595168910449,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 2.6
+      },
+      {
+        "period_end_month": "2021-04-01T00:00:00",
+        "median_sale_ppsf": 115.55214975591,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 4.2
+      },
+      {
+        "period_end_month": "2021-05-01T00:00:00",
+        "median_sale_ppsf": 119.14893617021276,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 5
+      },
+      {
+        "period_end_month": "2021-06-01T00:00:00",
+        "median_sale_ppsf": 122.60725075880842,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 5.4
+      },
+      {
+        "period_end_month": "2021-07-01T00:00:00",
+        "median_sale_ppsf": 124.88521256208692,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 5.4
+      },
+      {
+        "period_end_month": "2021-08-01T00:00:00",
+        "median_sale_ppsf": 126.52299663787052,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 5.3
+      },
+      {
+        "period_end_month": "2021-09-01T00:00:00",
+        "median_sale_ppsf": 128.36565183948557,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 5.4
+      },
+      {
+        "period_end_month": "2021-10-01T00:00:00",
+        "median_sale_ppsf": 128.96418292536114,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 6.2
+      },
+      {
+        "period_end_month": "2021-11-01T00:00:00",
+        "median_sale_ppsf": 128.83417363285665,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 6.8
+      },
+      {
+        "period_end_month": "2021-12-01T00:00:00",
+        "median_sale_ppsf": 129.72765378649672,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 7
+      },
+      {
+        "period_end_month": "2022-01-01T00:00:00",
+        "median_sale_ppsf": 128.26575823379787,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 7.5
+      },
+      {
+        "period_end_month": "2022-02-01T00:00:00",
+        "median_sale_ppsf": 130.33680908228848,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 7.9
+      },
+      {
+        "period_end_month": "2022-03-01T00:00:00",
+        "median_sale_ppsf": 133.98367183317166,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 8.5
+      },
+      {
+        "period_end_month": "2022-04-01T00:00:00",
+        "median_sale_ppsf": 136.6698227415892,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 8.3
+      },
+      {
+        "period_end_month": "2022-05-01T00:00:00",
+        "median_sale_ppsf": 137.6900831240103,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 8.6
+      },
+      {
+        "period_end_month": "2022-06-01T00:00:00",
+        "median_sale_ppsf": 141.85170767383426,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 9.1
+      },
+      {
+        "period_end_month": "2022-07-01T00:00:00",
+        "median_sale_ppsf": 142.24819693273204,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 8.5
+      },
+      {
+        "period_end_month": "2022-08-01T00:00:00",
+        "median_sale_ppsf": 141.52568427112237,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 8.3
+      },
+      {
+        "period_end_month": "2022-09-01T00:00:00",
+        "median_sale_ppsf": 140.8682397292214,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 8.2
+      },
+      {
+        "period_end_month": "2022-10-01T00:00:00",
+        "median_sale_ppsf": 140.66156621173337,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 7.7
+      },
+      {
+        "period_end_month": "2022-11-01T00:00:00",
+        "median_sale_ppsf": 140.00381367424978,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 7.1
+      },
+      {
+        "period_end_month": "2022-12-01T00:00:00",
+        "median_sale_ppsf": 137.59488673378996,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 6.5
+      },
+      {
+        "period_end_month": "2023-01-01T00:00:00",
+        "median_sale_ppsf": 136.35180415911736,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 6.4
+      },
+      {
+        "period_end_month": "2023-02-01T00:00:00",
+        "median_sale_ppsf": 136.00339211096878,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 6
+      },
+      {
+        "period_end_month": "2023-03-01T00:00:00",
+        "median_sale_ppsf": 139.0404976151968,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 5
+      },
+      {
+        "period_end_month": "2023-04-01T00:00:00",
+        "median_sale_ppsf": 140.75669821841336,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 4.9
+      },
+      {
+        "period_end_month": "2023-05-01T00:00:00",
+        "median_sale_ppsf": 144.3057456228953,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 4
+      },
+      {
+        "period_end_month": "2023-06-01T00:00:00",
+        "median_sale_ppsf": 147.70713102862086,
+        "Rate_Type": "Annual Inflation Rate",
+        "Rates(%)": 3
+      },
+      {
+        "period_end_month": "2017-01-01T00:00:00",
+        "median_sale_ppsf": 87.67102222310046,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.415447887686905
+      },
+      {
+        "period_end_month": "2017-02-01T00:00:00",
+        "median_sale_ppsf": 85.23130383381105,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.34853787247472
+      },
+      {
+        "period_end_month": "2017-03-01T00:00:00",
+        "median_sale_ppsf": 86.58183474862886,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.9484848685721605
+      },
+      {
+        "period_end_month": "2017-04-01T00:00:00",
+        "median_sale_ppsf": 88.59994626936985,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.64122091088159
+      },
+      {
+        "period_end_month": "2017-05-01T00:00:00",
+        "median_sale_ppsf": 90.63560007113713,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.508526610140253
+      },
+      {
+        "period_end_month": "2017-06-01T00:00:00",
+        "median_sale_ppsf": 92.2640532424509,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 5.774512387792588
+      },
+      {
+        "period_end_month": "2017-07-01T00:00:00",
+        "median_sale_ppsf": 93.17627032374912,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 5.8055832520601
+      },
+      {
+        "period_end_month": "2017-08-01T00:00:00",
+        "median_sale_ppsf": 93.04015985713805,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 5.82265411005298
+      },
+      {
+        "period_end_month": "2017-09-01T00:00:00",
+        "median_sale_ppsf": 93.90820943063133,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.467185622830525
+      },
+      {
+        "period_end_month": "2017-10-01T00:00:00",
+        "median_sale_ppsf": 92.25897038954636,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.286470065994535
+      },
+      {
+        "period_end_month": "2017-11-01T00:00:00",
+        "median_sale_ppsf": 92.91296680611147,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.594810471809643
+      },
+      {
+        "period_end_month": "2017-12-01T00:00:00",
+        "median_sale_ppsf": 92.50094156649459,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.74335308043825
+      },
+      {
+        "period_end_month": "2018-01-01T00:00:00",
+        "median_sale_ppsf": 92.393194747717,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 7.146086468492735
+      },
+      {
+        "period_end_month": "2018-02-01T00:00:00",
+        "median_sale_ppsf": 90.51097627046647,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 7.772565268324572
+      },
+      {
+        "period_end_month": "2018-03-01T00:00:00",
+        "median_sale_ppsf": 91.9931856899489,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 7.29144666720815
+      },
+      {
+        "period_end_month": "2018-04-01T00:00:00",
+        "median_sale_ppsf": 94.46575740453139,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.864878292557459
+      },
+      {
+        "period_end_month": "2018-05-01T00:00:00",
+        "median_sale_ppsf": 96.13493635425317,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.748629042490747
+      },
+      {
+        "period_end_month": "2018-06-01T00:00:00",
+        "median_sale_ppsf": 97.80064909704294,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.530824237084159
+      },
+      {
+        "period_end_month": "2018-07-01T00:00:00",
+        "median_sale_ppsf": 99.14999467984813,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.195471566238015
+      },
+      {
+        "period_end_month": "2018-08-01T00:00:00",
+        "median_sale_ppsf": 99.30802432110066,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.709216382344202
+      },
+      {
+        "period_end_month": "2018-09-01T00:00:00",
+        "median_sale_ppsf": 98.5769836641828,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 5.72969779729437
+      },
+      {
+        "period_end_month": "2018-10-01T00:00:00",
+        "median_sale_ppsf": 98.44464400779725,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 5.941188606154185
+      },
+      {
+        "period_end_month": "2018-11-01T00:00:00",
+        "median_sale_ppsf": 98.03285599568264,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 5.98470562653024
+      },
+      {
+        "period_end_month": "2018-12-01T00:00:00",
+        "median_sale_ppsf": 96.79310861049035,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 5.262379995389385
+      },
+      {
+        "period_end_month": "2019-01-01T00:00:00",
+        "median_sale_ppsf": 96.84008069861659,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 4.612266138342483
+      },
+      {
+        "period_end_month": "2019-02-01T00:00:00",
+        "median_sale_ppsf": 95.95875226690484,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 5.203423511748046
+      },
+      {
+        "period_end_month": "2019-03-01T00:00:00",
+        "median_sale_ppsf": 95.91047151607523,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 5.12306041540955
+      },
+      {
+        "period_end_month": "2019-04-01T00:00:00",
+        "median_sale_ppsf": 98.23199999018834,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 4.919579151429344
+      },
+      {
+        "period_end_month": "2019-05-01T00:00:00",
+        "median_sale_ppsf": 100.3479323665951,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 5.33101134402146
+      },
+      {
+        "period_end_month": "2019-06-01T00:00:00",
+        "median_sale_ppsf": 101.45623089364916,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 4.74076969741836
+      },
+      {
+        "period_end_month": "2019-07-01T00:00:00",
+        "median_sale_ppsf": 103.66010948245525,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 4.665721153522591
+      },
+      {
+        "period_end_month": "2019-08-01T00:00:00",
+        "median_sale_ppsf": 103.02675139079005,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 4.739731624759025
+      },
+      {
+        "period_end_month": "2019-09-01T00:00:00",
+        "median_sale_ppsf": 102.37660523673507,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 4.923805169306259
+      },
+      {
+        "period_end_month": "2019-10-01T00:00:00",
+        "median_sale_ppsf": 102.76813357613534,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 5.2976334315039395
+      },
+      {
+        "period_end_month": "2019-11-01T00:00:00",
+        "median_sale_ppsf": 101.70719796079557,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 5.53410553915319
+      },
+      {
+        "period_end_month": "2019-12-01T00:00:00",
+        "median_sale_ppsf": 100.34323338120302,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.0395217414667846
+      },
+      {
+        "period_end_month": "2020-01-01T00:00:00",
+        "median_sale_ppsf": 100.060863272046,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.174159135261557
+      },
+      {
+        "period_end_month": "2020-02-01T00:00:00",
+        "median_sale_ppsf": 98.85383280399697,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.06557629813545
+      },
+      {
+        "period_end_month": "2020-03-01T00:00:00",
+        "median_sale_ppsf": 99.60101475587233,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.505680830950871
+      },
+      {
+        "period_end_month": "2020-04-01T00:00:00",
+        "median_sale_ppsf": 102.92037855143147,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 7.071672184259454
+      },
+      {
+        "period_end_month": "2020-05-01T00:00:00",
+        "median_sale_ppsf": 103.35614054704533,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 5.083226460260446
+      },
+      {
+        "period_end_month": "2020-06-01T00:00:00",
+        "median_sale_ppsf": 106.19982504158341,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 5.133224244414294
+      },
+      {
+        "period_end_month": "2020-07-01T00:00:00",
+        "median_sale_ppsf": 107.92751421496763,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.8216164309294145
+      },
+      {
+        "period_end_month": "2020-08-01T00:00:00",
+        "median_sale_ppsf": 109.00027964328456,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 8.07179801300081
+      },
+      {
+        "period_end_month": "2020-09-01T00:00:00",
+        "median_sale_ppsf": 111.89569859878544,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 10.18544733649555
+      },
+      {
+        "period_end_month": "2020-10-01T00:00:00",
+        "median_sale_ppsf": 110.80719904728754,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 11.25504520164276
+      },
+      {
+        "period_end_month": "2020-11-01T00:00:00",
+        "median_sale_ppsf": 111.30441014810617,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 12.206877167918636
+      },
+      {
+        "period_end_month": "2020-12-01T00:00:00",
+        "median_sale_ppsf": 112.901482436578,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 13.017136620815464
+      },
+      {
+        "period_end_month": "2021-01-01T00:00:00",
+        "median_sale_ppsf": 112.0301568205333,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 14.034980166115046
+      },
+      {
+        "period_end_month": "2021-02-01T00:00:00",
+        "median_sale_ppsf": 112.95132806827048,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 15.13688815481384
+      },
+      {
+        "period_end_month": "2021-03-01T00:00:00",
+        "median_sale_ppsf": 115.61595168910449,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 15.78491876771424
+      },
+      {
+        "period_end_month": "2021-04-01T00:00:00",
+        "median_sale_ppsf": 115.55214975591,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 14.67179290512441
+      },
+      {
+        "period_end_month": "2021-05-01T00:00:00",
+        "median_sale_ppsf": 119.14893617021276,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 17.64490253950719
+      },
+      {
+        "period_end_month": "2021-06-01T00:00:00",
+        "median_sale_ppsf": 122.60725075880842,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 19.55182859752081
+      },
+      {
+        "period_end_month": "2021-07-01T00:00:00",
+        "median_sale_ppsf": 124.88521256208692,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 18.641665314967977
+      },
+      {
+        "period_end_month": "2021-08-01T00:00:00",
+        "median_sale_ppsf": 126.52299663787052,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 18.09337955133958
+      },
+      {
+        "period_end_month": "2021-09-01T00:00:00",
+        "median_sale_ppsf": 128.36565183948557,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 17.36111450057318
+      },
+      {
+        "period_end_month": "2021-10-01T00:00:00",
+        "median_sale_ppsf": 128.96418292536114,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 17.1298220923953
+      },
+      {
+        "period_end_month": "2021-11-01T00:00:00",
+        "median_sale_ppsf": 128.83417363285665,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 16.401430390610727
+      },
+      {
+        "period_end_month": "2021-12-01T00:00:00",
+        "median_sale_ppsf": 129.72765378649672,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 17.017552155561226
+      },
+      {
+        "period_end_month": "2022-01-01T00:00:00",
+        "median_sale_ppsf": 128.26575823379787,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 17.26564345089765
+      },
+      {
+        "period_end_month": "2022-02-01T00:00:00",
+        "median_sale_ppsf": 130.33680908228848,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 16.841461715875866
+      },
+      {
+        "period_end_month": "2022-03-01T00:00:00",
+        "median_sale_ppsf": 133.98367183317166,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 17.435868498823908
+      },
+      {
+        "period_end_month": "2022-04-01T00:00:00",
+        "median_sale_ppsf": 136.6698227415892,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 18.134679043244052
+      },
+      {
+        "period_end_month": "2022-05-01T00:00:00",
+        "median_sale_ppsf": 137.6900831240103,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 17.59900586289
+      },
+      {
+        "period_end_month": "2022-06-01T00:00:00",
+        "median_sale_ppsf": 141.85170767383426,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 16.006973092389114
+      },
+      {
+        "period_end_month": "2022-07-01T00:00:00",
+        "median_sale_ppsf": 142.24819693273204,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 14.265369381940621
+      },
+      {
+        "period_end_month": "2022-08-01T00:00:00",
+        "median_sale_ppsf": 141.52568427112237,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 12.572557328485065
+      },
+      {
+        "period_end_month": "2022-09-01T00:00:00",
+        "median_sale_ppsf": 140.8682397292214,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 10.75634677980129
+      },
+      {
+        "period_end_month": "2022-10-01T00:00:00",
+        "median_sale_ppsf": 140.66156621173337,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 9.58658119799267
+      },
+      {
+        "period_end_month": "2022-11-01T00:00:00",
+        "median_sale_ppsf": 140.00381367424978,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 8.653750463845132
+      },
+      {
+        "period_end_month": "2022-12-01T00:00:00",
+        "median_sale_ppsf": 137.59488673378996,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 6.845179991564837
+      },
+      {
+        "period_end_month": "2023-01-01T00:00:00",
+        "median_sale_ppsf": 136.35180415911736,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 4.904058894522826
+      },
+      {
+        "period_end_month": "2023-02-01T00:00:00",
+        "median_sale_ppsf": 136.00339211096878,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 3.762719092626528
+      },
+      {
+        "period_end_month": "2023-03-01T00:00:00",
+        "median_sale_ppsf": 139.0404976151968,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 3.6050281063406353
+      },
+      {
+        "period_end_month": "2023-04-01T00:00:00",
+        "median_sale_ppsf": 140.75669821841336,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 3.05861015382782
+      },
+      {
+        "period_end_month": "2023-05-01T00:00:00",
+        "median_sale_ppsf": 144.3057456228953,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 2.3690130619985545
+      },
+      {
+        "period_end_month": "2023-06-01T00:00:00",
+        "median_sale_ppsf": 147.70713102862086,
+        "Rate_Type": "Median Sale PPSF % YoY",
+        "Rates(%)": 2.770430603104565
+      }
+    ]
+  }
+};
+    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>

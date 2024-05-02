@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The "Why" - US Housing Price Explorer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./Bootswatch_ Sandstone_files/bootstrap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./Bootswatch_ Sandstone_files/bootstrap.min.css"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></script>
+
+    <script>
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg fixed-top bg-primary"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand">US Housing Price Explorer</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                >The "Why"
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="the_where.html">The "Where"</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="the_when.html">The "When"</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="bs-docs-section clearfix" , style="margin-top: 4em">
+        <div class="row">
+          <div class="col-lg-12 text-left">
+            <br />
+            <div class="page-header">
+              <h2>Why should I a homeowner?</h2>
+              <p>
+                Real estate has historically been a stable investment. The
+                fastest growing 200 regions in our analysis grew on average over
+                <strong>&gt;14%</strong> year-over-year from 2017 to now. The
+                top grwoing region was able to <strong>quadruple</strong> in
+                value in just <strong>6 years.</strong>
+                <br />
+              </p>
+              <hr />
+              <h4>Long-term Potential of Growth</h4>
+              <p>
+                Examining the last 6 years, the data shows consistent growth in
+                median home values, especially in the top 5 fastest-growing
+                regions demonstrated below. In Petersburg, the median home sale
+                value increased from less than <strong>$50k in 2017</strong> to
+                almost <strong>$190k in June 2023.</strong>
+              </p>
+              <h5 style="color: #007bff">
+                Hover over the lines to see details
+              </h5>
+              <!-- Text color changed -->
+            </div>
+
+            <!--<iframe src="Plots/NL_line_chart.html" height="450" width="1200" style="border:none" name="NL_norm" title="Normalized Line Chart"></iframe>!-->
+            <iframe
+              src="Plots/NL_norm_chart.html"
+              height="450"
+              width="900"
+              style="border: none; margin-left: 30px"
+              name="NL_norm"
+              title="Normalized Line Chart"
+            ></iframe>
+            <br />
+            <hr />
+            <br />
+            <h4>Protection Against Inflation</h4>
+            <p>
+              The most simple definition of inflation is that money
+              <strong>decreases</strong> in value over time compared to goods
+              and services. Being a home owner puts you in a better place
+              because that means your house, since it is something tangible,
+              adds value compared to when you hold money in your hands. <br />
+              Take a look at the graph below: median home prices per square feet
+              have grown steadily over the past 6 years; the year-over-year
+              (YoY) growth rates have remained <em>positive</em>.<br />
+              Even taking inflation into consideration, the net worth of your
+              home is <strong>guaranteed to increase over time</strong>.
+            </p>
+            <br />
+            <iframe
+              src="Plots/SC_multi_line_infl.html"
+              height="400"
+              width="1200"
+              style="border: none"
+              name="SC_infl"
+              title="Inflation Plot"
+            ></iframe>
+            <br />
+            <h3>Want to learn more?</h3>
+            <p>
+              You can be one of these home owners! Keep exploring the site to
+              find out more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+      <hr />
+      <button
+        type="button"
+        class="btn btn-primary"
+        onclick="location.href='index.html'"
+        id="prev_page"
+        title="Click to go to the previous page"
+      >
+        << Prev: Home
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        onclick="topFunction()"
+        id="myBtn"
+        title="Go to top"
+      >
+        Back to the Top
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        onclick="location.href='the_where.html'"
+        id="next_page"
+        title="Click to go to the next page"
+      >
+        Next: The "Where" >>
+      </button>
+      <hr />
+    </footer>
+  </body>
+</html>

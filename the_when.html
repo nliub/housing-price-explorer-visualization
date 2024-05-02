@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The "When" - US Housing Price Explorer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./Bootswatch_ Sandstone_files/bootstrap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./Bootswatch_ Sandstone_files/bootstrap.min.css"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></script>
+    <script>
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg fixed-top bg-primary"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand">US Housing Price Explorer</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="the_why.html">The "Why" </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="the_where.html">The "Where"</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                >The "When"
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="bs-docs-section clearfix" , style="margin-top: 4em">
+        <div class="row">
+          <div class="col-lg-12 text-left">
+            <br />
+            <div class="page-header">
+              <h2>When should I buy or sell?</h2>
+              <p>
+                Next, let's look at the supply of the market, also know as
+                "inventory". This is the number of house sale listings across
+                the 4-week period on market. How long will these listings be
+                available for? Which month of the year are there more options?
+                The following plots will help you find those answers.
+              </p>
+
+              <p>
+                For a deeper dive into the market trends, we hope these charts
+                below can help you better understand particular market traits,
+                including seasonality, price fluctuation relative to inflation
+                and interest rates.
+              </p>
+            </div>
+            <hr />
+
+            <h4>Are some seasons better than others to buy?</h4>
+            <p>
+              Takeaway: contrary to common wisdom, peak home sales do not
+              necessarily align with the school calendar. There isn't any
+              noticable trend to suggest certain months are consistently better
+              to buy.
+            </p>
+            <div
+              class="tableauPlaceholder"
+              id="viz1690938573357"
+              style="position: relative"
+            >
+              <noscript
+                ><a href="#"
+                  ><img
+                    alt="Home Sales By Month&#47;Year "
+                    src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ho&#47;home_sale_seasonality&#47;HomeSalesbyMonthYear&#47;1_rss.png"
+                    style="border: none" /></a></noscript
+              ><object class="tableauViz" style="display: none">
+                <param
+                  name="host_url"
+                  value="https%3A%2F%2Fpublic.tableau.com%2F"
+                />
+                <param name="embed_code_version" value="3" />
+                <param name="site_root" value="" />
+                <param
+                  name="name"
+                  value="home_sale_seasonality&#47;HomeSalesbyMonthYear"
+                />
+                <param name="tabs" value="no" />
+                <param name="toolbar" value="yes" />
+                <param
+                  name="static_image"
+                  value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ho&#47;home_sale_seasonality&#47;HomeSalesbyMonthYear&#47;1.png"
+                />
+                <param name="animate_transition" value="yes" />
+                <param name="display_static_image" value="yes" />
+                <param name="display_spinner" value="yes" />
+                <param name="display_overlay" value="yes" />
+                <param name="display_count" value="yes" />
+                <param name="language" value="en-US" />
+              </object>
+            </div>
+            <script type="text/javascript">
+              var divElement = document.getElementById("viz1690938573357");
+              var vizElement = divElement.getElementsByTagName("object")[0];
+              vizElement.style.width = "100%";
+              vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+              var scriptElement = document.createElement("script");
+              scriptElement.src =
+                "https://public.tableau.com/javascripts/api/viz_v1.js";
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+            <br />
+
+            <div
+              class="tableauPlaceholder"
+              id="viz1690087288752"
+              style="position: relative"
+            >
+              <noscript
+                ><a href="#"
+                  ><img
+                    alt="Dashboard 1 "
+                    src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project_EDA_W209&#47;Dashboard1&#47;1_rss.png"
+                    style="border: none" /></a></noscript
+              ><object class="tableauViz" style="display: none">
+                <param
+                  name="host_url"
+                  value="https%3A%2F%2Fpublic.tableau.com%2F"
+                />
+                <param name="embed_code_version" value="3" />
+                <param name="site_root" value="" />
+                <param name="name" value="Project_EDA_W209&#47;Dashboard1" />
+                <param name="tabs" value="no" />
+                <param name="toolbar" value="yes" />
+                <param
+                  name="static_image"
+                  value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project_EDA_W209&#47;Dashboard1&#47;1.png"
+                />
+                <param name="animate_transition" value="yes" />
+                <param name="display_static_image" value="yes" />
+                <param name="display_spinner" value="yes" />
+                <param name="display_overlay" value="yes" />
+                <param name="display_count" value="yes" />
+                <param name="language" value="en-US" />
+                <param name="filter" value="publish=yes" />
+              </object>
+            </div>
+            <script type="text/javascript">
+              var divElement = document.getElementById("viz1690087288752");
+              var vizElement = divElement.getElementsByTagName("object")[0];
+              if (divElement.offsetWidth > 800) {
+                vizElement.style.width = "1000px";
+                vizElement.style.height = "827px";
+              } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = "1000px";
+                vizElement.style.height = "827px";
+              } else {
+                vizElement.style.width = "100%";
+                vizElement.style.height = "877px";
+              }
+              var scriptElement = document.createElement("script");
+              scriptElement.src =
+                "https://public.tableau.com/javascripts/api/viz_v1.js";
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+            <hr />
+            <br />
+            <h4>Would interest rates affect the prices?</h4>
+            <p>
+              Let's examine mortgage rates too. Below is a series of connected
+              scatterplots for the median sale price per square foot growth
+              year-over-year plotted against the mortgage rates for the current
+              month, from 3 months ago, and from 6 months ago.
+            </p>
+            <p>
+              The black circles emphasize the extreme inflation rates (either a
+              maximum or a minimum).
+            </p>
+
+            <iframe
+              src="Plots/SC_cs_mort_only.html"
+              height="600"
+              width="1500"
+              style="border: none"
+              name="SC_connected_scatter"
+              title="Connected Scatter Plot"
+            ></iframe>
+            <p>
+              In this case, thanks again to the lagging nature of home prices,
+              we see a most pronounced negative correlation between mortage
+              rates from 6 months ago and growth of median sale price (right
+              most graph). Keep in mind that closing a house also takes a month
+              or so. It appears that the housing market has some kind of
+              momentum that delays responses to rising mortgage rates. It could
+              also be that mortgage rates might not be the main driver of the
+              market. Have some thoughts about the underlying market drivers?
+              Share with us in the <a href="about.html">About</a> page!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+      <hr />
+      <button
+        type="button"
+        class="btn btn-primary"
+        onclick="location.href='the_where.html'"
+        id="prev_page"
+        title="Click to go to the previous page"
+      >
+        << Prev: The "Where"
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        onclick="topFunction()"
+        id="myBtn"
+        title="Go to top"
+      >
+        Back to the Top
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        onclick="location.href='about.html'"
+        id="next_page"
+        title="Click to go to the next page"
+      >
+        Next: About >>
+      </button>
+      <hr />
+    </footer>
+  </body>
+</html>

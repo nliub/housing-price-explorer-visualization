@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.12.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.1"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+  "data": {"name": "data-d697c2f1f1dd889152c3256bd230704f"},
+  "mark": "line",
+  "encoding": {
+    "color": {"field": "Year", "type": "nominal"},
+    "x": {"field": "Month", "sort": null, "title": "Month", "type": "nominal"},
+    "y": {
+      "field": "normalized_home_sales",
+      "title": "Normalized Homes Sales",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "title": "Normalized Home Sales Per Month Per Year",
+  "width": 600,
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-d697c2f1f1dd889152c3256bd230704f": [
+      {
+        "index": 0,
+        "Year": 2017,
+        "Month": "Jan",
+        "total_homes_sold": 320692,
+        "median_sale_price": 180374.85867460907,
+        "normalized_home_sales": 1.7779196189338056
+      },
+      {
+        "index": 1,
+        "Year": 2017,
+        "Month": "Feb",
+        "total_homes_sold": 270104,
+        "median_sale_price": 186163.52321428573,
+        "normalized_home_sales": 1.4508964771207815
+      },
+      {
+        "index": 2,
+        "Year": 2017,
+        "Month": "Mar",
+        "total_homes_sold": 581615,
+        "median_sale_price": 191000.4003693444,
+        "normalized_home_sales": 3.04509832898418
+      },
+      {
+        "index": 3,
+        "Year": 2017,
+        "Month": "Apr",
+        "total_homes_sold": 276414,
+        "median_sale_price": 199951.05265049415,
+        "normalized_home_sales": 1.3824083261174913
+      },
+      {
+        "index": 4,
+        "Year": 2017,
+        "Month": "May",
+        "total_homes_sold": 853793,
+        "median_sale_price": 196986.0248221906,
+        "normalized_home_sales": 4.3342820932128365
+      },
+      {
+        "index": 5,
+        "Year": 2017,
+        "Month": "Jun",
+        "total_homes_sold": 355350,
+        "median_sale_price": 204361.86164021163,
+        "normalized_home_sales": 1.7388273778089274
+      },
+      {
+        "index": 6,
+        "Year": 2017,
+        "Month": "Jul",
+        "total_homes_sold": 1257849,
+        "median_sale_price": 197761.83905915893,
+        "normalized_home_sales": 6.360423254476938
+      },
+      {
+        "index": 7,
+        "Year": 2017,
+        "Month": "Aug",
+        "total_homes_sold": 246524,
+        "median_sale_price": 193188.27390527257,
+        "normalized_home_sales": 1.2760815913748467
+      },
+      {
+        "index": 8,
+        "Year": 2017,
+        "Month": "Sep",
+        "total_homes_sold": 234775,
+        "median_sale_price": 198981.6478771454,
+        "normalized_home_sales": 1.179882680160303
+      },
+      {
+        "index": 9,
+        "Year": 2017,
+        "Month": "Oct",
+        "total_homes_sold": 378301,
+        "median_sale_price": 193937.5989597781,
+        "normalized_home_sales": 1.950632585063911
+      },
+      {
+        "index": 10,
+        "Year": 2017,
+        "Month": "Nov",
+        "total_homes_sold": 268243,
+        "median_sale_price": 196164.11349134002,
+        "normalized_home_sales": 1.3674417569340074
+      },
+      {
+        "index": 11,
+        "Year": 2017,
+        "Month": "Dec",
+        "total_homes_sold": 220691,
+        "median_sale_price": 206870.10795454544,
+        "normalized_home_sales": 1.0668095172478538
+      },
+      {
+        "index": 12,
+        "Year": 2018,
+        "Month": "Jan",
+        "total_homes_sold": 204303,
+        "median_sale_price": 188763.0804347826,
+        "normalized_home_sales": 1.082324994535075
+      },
+      {
+        "index": 13,
+        "Year": 2018,
+        "Month": "Feb",
+        "total_homes_sold": 462662,
+        "median_sale_price": 197364.26597845604,
+        "normalized_home_sales": 2.3442034843860915
+      },
+      {
+        "index": 14,
+        "Year": 2018,
+        "Month": "Mar",
+        "total_homes_sold": 233406,
+        "median_sale_price": 207549.3795268426,
+        "normalized_home_sales": 1.124580572257569
+      },
+      {
+        "index": 15,
+        "Year": 2018,
+        "Month": "Apr",
+        "total_homes_sold": 655683,
+        "median_sale_price": 202593.380195258,
+        "normalized_home_sales": 3.2364482954381706
+      },
+      {
+        "index": 16,
+        "Year": 2018,
+        "Month": "May",
+        "total_homes_sold": 297035,
+        "median_sale_price": 205128.2357522124,
+        "normalized_home_sales": 1.4480454088183534
+      },
+      {
+        "index": 17,
+        "Year": 2018,
+        "Month": "Jun",
+        "total_homes_sold": 335690,
+        "median_sale_price": 217316.10122270742,
+        "normalized_home_sales": 1.5447083677245892
+      },
+      {
+        "index": 18,
+        "Year": 2018,
+        "Month": "Jul",
+        "total_homes_sold": 420940,
+        "median_sale_price": 213468.36524822694,
+        "normalized_home_sales": 1.971908106901551
+      },
+      {
+        "index": 19,
+        "Year": 2018,
+        "Month": "Aug",
+        "total_homes_sold": 665538,
+        "median_sale_price": 217411.38229426433,
+        "normalized_home_sales": 3.061192072727822
+      },
+      {
+        "index": 20,
+        "Year": 2018,
+        "Month": "Sep",
+        "total_homes_sold": 279824,
+        "median_sale_price": 215919.02742805754,
+        "normalized_home_sales": 1.295967304656534
+      },
+      {
+        "index": 21,
+        "Year": 2018,
+        "Month": "Oct",
+        "total_homes_sold": 621084,
+        "median_sale_price": 208083.751446281,
+        "normalized_home_sales": 2.984778944454677
+      },
+      {
+        "index": 22,
+        "Year": 2018,
+        "Month": "Nov",
+        "total_homes_sold": 197481,
+        "median_sale_price": 206896.87898866608,
+        "normalized_home_sales": 0.9544899902082047
+      },
+      {
+        "index": 23,
+        "Year": 2018,
+        "Month": "Dec",
+        "total_homes_sold": 511850,
+        "median_sale_price": 205977.47485955057,
+        "normalized_home_sales": 2.484980458902189
+      },
+      {
+        "index": 24,
+        "Year": 2019,
+        "Month": "Jan",
+        "total_homes_sold": 264162,
+        "median_sale_price": 199938.1236030025,
+        "normalized_home_sales": 1.3212187612829684
+      },
+      {
+        "index": 25,
+        "Year": 2019,
+        "Month": "Feb",
+        "total_homes_sold": 526900,
+        "median_sale_price": 204451.07978723405,
+        "normalized_home_sales": 2.577144618401275
+      },
+      {
+        "index": 26,
+        "Year": 2019,
+        "Month": "Mar",
+        "total_homes_sold": 1225349,
+        "median_sale_price": 204951.7744838976,
+        "normalized_home_sales": 5.978718667284687
+      },
+      {
+        "index": 27,
+        "Year": 2019,
+        "Month": "Apr",
+        "total_homes_sold": 342227,
+        "median_sale_price": 210474.57170184696,
+        "normalized_home_sales": 1.625977890026498
+      },
+      {
+        "index": 28,
+        "Year": 2019,
+        "Month": "May",
+        "total_homes_sold": 333151,
+        "median_sale_price": 208878.45866773676,
+        "normalized_home_sales": 1.594951447482403
+      },
+      {
+        "index": 29,
+        "Year": 2019,
+        "Month": "Jun",
+        "total_homes_sold": 316521,
+        "median_sale_price": 212691.34729620663,
+        "normalized_home_sales": 1.488170553356804
+      },
+      {
+        "index": 30,
+        "Year": 2019,
+        "Month": "Jul",
+        "total_homes_sold": 478447,
+        "median_sale_price": 221843.4454015544,
+        "normalized_home_sales": 2.1566875646651296
+      },
+      {
+        "index": 31,
+        "Year": 2019,
+        "Month": "Aug",
+        "total_homes_sold": 337930,
+        "median_sale_price": 216766.9646456693,
+        "normalized_home_sales": 1.558955261252035
+      },
+      {
+        "index": 32,
+        "Year": 2019,
+        "Month": "Sep",
+        "total_homes_sold": 739088,
+        "median_sale_price": 222959.97901234566,
+        "normalized_home_sales": 3.3148908753668094
+      },
+      {
+        "index": 33,
+        "Year": 2019,
+        "Month": "Oct",
+        "total_homes_sold": 295339,
+        "median_sale_price": 207804.07011400652,
+        "normalized_home_sales": 1.421237802695441
+      },
+      {
+        "index": 34,
+        "Year": 2019,
+        "Month": "Nov",
+        "total_homes_sold": 249742,
+        "median_sale_price": 208057.21951219512,
+        "normalized_home_sales": 1.2003524827715077
+      },
+      {
+        "index": 35,
+        "Year": 2019,
+        "Month": "Dec",
+        "total_homes_sold": 213750,
+        "median_sale_price": 215787.615936255,
+        "normalized_home_sales": 0.9905573082708466
+      },
+      {
+        "index": 36,
+        "Year": 2020,
+        "Month": "Jan",
+        "total_homes_sold": 208462,
+        "median_sale_price": 203236.99518367345,
+        "normalized_home_sales": 1.0257089257376812
+      },
+      {
+        "index": 37,
+        "Year": 2020,
+        "Month": "Feb",
+        "total_homes_sold": 237616,
+        "median_sale_price": 210053.71964140178,
+        "normalized_home_sales": 1.1312153881666642
+      },
+      {
+        "index": 38,
+        "Year": 2020,
+        "Month": "Mar",
+        "total_homes_sold": 317599,
+        "median_sale_price": 218761.1738878143,
+        "normalized_home_sales": 1.451806983641768
+      },
+      {
+        "index": 39,
+        "Year": 2020,
+        "Month": "Apr",
+        "total_homes_sold": 500686,
+        "median_sale_price": 226416.58604845448,
+        "normalized_home_sales": 2.2113485974603035
+      },
+      {
+        "index": 40,
+        "Year": 2020,
+        "Month": "May",
+        "total_homes_sold": 1250112,
+        "median_sale_price": 220862.27248376622,
+        "normalized_home_sales": 5.660142793703644
+      },
+      {
+        "index": 41,
+        "Year": 2020,
+        "Month": "Jun",
+        "total_homes_sold": 457394,
+        "median_sale_price": 236424.37551413884,
+        "normalized_home_sales": 1.934631312889506
+      },
+      {
+        "index": 42,
+        "Year": 2020,
+        "Month": "Jul",
+        "total_homes_sold": 358277,
+        "median_sale_price": 239315.40221882172,
+        "normalized_home_sales": 1.4970912723469587
+      },
+      {
+        "index": 43,
+        "Year": 2020,
+        "Month": "Aug",
+        "total_homes_sold": 957930,
+        "median_sale_price": 246046.5627244582,
+        "normalized_home_sales": 3.893287471253006
+      },
+      {
+        "index": 44,
+        "Year": 2020,
+        "Month": "Sep",
+        "total_homes_sold": 398041,
+        "median_sale_price": 255319.11776611695,
+        "normalized_home_sales": 1.5589941069928899
+      },
+      {
+        "index": 45,
+        "Year": 2020,
+        "Month": "Oct",
+        "total_homes_sold": 829841,
+        "median_sale_price": 253811.36456876455,
+        "normalized_home_sales": 3.2695186892436134
+      },
+      {
+        "index": 46,
+        "Year": 2020,
+        "Month": "Nov",
+        "total_homes_sold": 382973,
+        "median_sale_price": 252912.27670454545,
+        "normalized_home_sales": 1.5142523130555372
+      },
+      {
+        "index": 47,
+        "Year": 2020,
+        "Month": "Dec",
+        "total_homes_sold": 534113,
+        "median_sale_price": 250151.6654602675,
+        "normalized_home_sales": 2.1351566819163756
+      },
+      {
+        "index": 48,
+        "Year": 2021,
+        "Month": "Jan",
+        "total_homes_sold": 261448,
+        "median_sale_price": 254892.6816147082,
+        "normalized_home_sales": 1.0257179544887864
+      },
+      {
+        "index": 49,
+        "Year": 2021,
+        "Month": "Feb",
+        "total_homes_sold": 256405,
+        "median_sale_price": 250516.34592,
+        "normalized_home_sales": 1.0235060672722749
+      },
+      {
+        "index": 50,
+        "Year": 2021,
+        "Month": "Mar",
+        "total_homes_sold": 393341,
+        "median_sale_price": 261932.6857230018,
+        "normalized_home_sales": 1.5016873473208483
+      },
+      {
+        "index": 51,
+        "Year": 2021,
+        "Month": "Apr",
+        "total_homes_sold": 394639,
+        "median_sale_price": 258476.57568807338,
+        "normalized_home_sales": 1.5267882551811809
+      },
+      {
+        "index": 52,
+        "Year": 2021,
+        "Month": "May",
+        "total_homes_sold": 491832,
+        "median_sale_price": 273573.5143208359,
+        "normalized_home_sales": 1.7978056144104633
+      },
+      {
+        "index": 53,
+        "Year": 2021,
+        "Month": "Jun",
+        "total_homes_sold": 434332,
+        "median_sale_price": 277120.5419011407,
+        "normalized_home_sales": 1.5673035171638143
+      },
+      {
+        "index": 54,
+        "Year": 2021,
+        "Month": "Jul",
+        "total_homes_sold": 738491,
+        "median_sale_price": 284567.0617449664,
+        "normalized_home_sales": 2.595138718696289
+      },
+      {
+        "index": 55,
+        "Year": 2021,
+        "Month": "Aug",
+        "total_homes_sold": 422043,
+        "median_sale_price": 277488.602291918,
+        "normalized_home_sales": 1.5209381448972479
+      },
+      {
+        "index": 56,
+        "Year": 2021,
+        "Month": "Sep",
+        "total_homes_sold": 367059,
+        "median_sale_price": 273290.9329240215,
+        "normalized_home_sales": 1.3431071278974602
+      },
+      {
+        "index": 57,
+        "Year": 2021,
+        "Month": "Oct",
+        "total_homes_sold": 1471243,
+        "median_sale_price": 281221.2074854651,
+        "normalized_home_sales": 5.231621801055104
+      },
+      {
+        "index": 58,
+        "Year": 2021,
+        "Month": "Nov",
+        "total_homes_sold": 714161,
+        "median_sale_price": 284955.34691577696,
+        "normalized_home_sales": 2.5062207385463853
+      },
+      {
+        "index": 59,
+        "Year": 2021,
+        "Month": "Dec",
+        "total_homes_sold": 298577,
+        "median_sale_price": 287591.120412675,
+        "normalized_home_sales": 1.0381996480682747
+      },
+      {
+        "index": 60,
+        "Year": 2022,
+        "Month": "Jan",
+        "total_homes_sold": 1213823,
+        "median_sale_price": 291657.1821663674,
+        "normalized_home_sales": 4.1618141922101195
+      },
+      {
+        "index": 61,
+        "Year": 2022,
+        "Month": "Feb",
+        "total_homes_sold": 303914,
+        "median_sale_price": 278375.84722222225,
+        "normalized_home_sales": 1.0917398295599658
+      },
+      {
+        "index": 62,
+        "Year": 2022,
+        "Month": "Mar",
+        "total_homes_sold": 622606,
+        "median_sale_price": 290838.3508562919,
+        "normalized_home_sales": 2.1407286837066413
+      },
+      {
+        "index": 63,
+        "Year": 2022,
+        "Month": "Apr",
+        "total_homes_sold": 287811,
+        "median_sale_price": 308555.24158636027,
+        "normalized_home_sales": 0.9327697644035833
+      },
+      {
+        "index": 64,
+        "Year": 2022,
+        "Month": "May",
+        "total_homes_sold": 661866,
+        "median_sale_price": 310047.61185603385,
+        "normalized_home_sales": 2.134723747871756
+      },
+      {
+        "index": 65,
+        "Year": 2022,
+        "Month": "Jun",
+        "total_homes_sold": 151558,
+        "median_sale_price": 312498.91217137297,
+        "normalized_home_sales": 0.48498728826577897
+      },
+      {
+        "index": 66,
+        "Year": 2022,
+        "Month": "Jul",
+        "total_homes_sold": 86295,
+        "median_sale_price": 297567.6296296296,
+        "normalized_home_sales": 0.29000130191381335
+      }
+    ]
+  }
+};
+    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
